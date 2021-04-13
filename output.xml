@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210122 21:06:18.424" rpa="false">
+<suite id="s1" name="TestSuite 01" source="C:\Robot Projects\Demo\TestSuite_01.robot">
+<test id="s1-t1" name="TC01">
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${var1}</arg>
+<arg>${var2}</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.947" endtime="20210122 21:06:18.947"></status>
+</kw>
+<doc>This is my first test case . It used to compare two variables. *Testcases01* _This will be initalic_
+Link is http://www.google.com</doc>
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="PASS" starttime="20210122 21:06:18.947" endtime="20210122 21:06:18.948" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC02">
+<kw name="SetupDemo" type="setup">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>This is set up</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.949" endtime="20210122 21:06:18.949"></status>
+</kw>
+<status status="PASS" starttime="20210122 21:06:18.949" endtime="20210122 21:06:18.949"></status>
+</kw>
+<kw name="Should Not Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<arguments>
+<arg>@{USER} [0]</arg>
+<arg>@{USER} [1]</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.950" endtime="20210122 21:06:18.950"></status>
+</kw>
+<kw name="Teardowndemo" type="teardown">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>This is teardown</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.950" endtime="20210122 21:06:18.951"></status>
+</kw>
+<status status="PASS" starttime="20210122 21:06:18.950" endtime="20210122 21:06:18.951"></status>
+</kw>
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="PASS" starttime="20210122 21:06:18.948" endtime="20210122 21:06:18.951" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC03">
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>&amp;{Credentials} [username]</arg>
+<arg>&amp;{Credentials} [password]</arg>
+</arguments>
+<msg timestamp="20210122 21:06:18.954" level="FAIL">{'username': 'bharat', 'password': 'bharat'} [username] != {'username': 'bharat', 'password': 'bharat'} [password]</msg>
+<status status="FAIL" starttime="20210122 21:06:18.954" endtime="20210122 21:06:18.954"></status>
+</kw>
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="FAIL" starttime="20210122 21:06:18.953" endtime="20210122 21:06:18.954" critical="yes">{'username': 'bharat', 'password': 'bharat'} [username] != {'username': 'bharat', 'password': 'bharat'} [password]</status>
+</test>
+<test id="s1-t4" name="TC04">
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="FAIL" starttime="20210122 21:06:18.956" endtime="20210122 21:06:18.957" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t5" name="TC05">
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>4</arg>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.957" endtime="20210122 21:06:18.958"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>6</arg>
+<arg>6</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.958" endtime="20210122 21:06:18.958"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>8</arg>
+<arg>8</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.958" endtime="20210122 21:06:18.958"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>12</arg>
+<arg>12</arg>
+</arguments>
+<status status="PASS" starttime="20210122 21:06:18.958" endtime="20210122 21:06:18.959"></status>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>15</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210122 21:06:18.959" level="FAIL">15 != 3</msg>
+<status status="FAIL" starttime="20210122 21:06:18.959" endtime="20210122 21:06:18.959"></status>
+</kw>
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="FAIL" starttime="20210122 21:06:18.957" endtime="20210122 21:06:18.959" critical="yes">15 != 3</status>
+</test>
+<test id="s1-t6" name="TC06">
+<kw name="Comparetwovariables">
+<msg timestamp="20210122 21:06:18.962" level="FAIL">No keyword with name 'Comparetwovariables' found.</msg>
+<status status="FAIL" starttime="20210122 21:06:18.962" endtime="20210122 21:06:18.962"></status>
+</kw>
+<tags>
+<tag>LOGIN</tag>
+</tags>
+<status status="FAIL" starttime="20210122 21:06:18.960" endtime="20210122 21:06:18.963" critical="yes">No keyword with name 'Comparetwovariables' found.</status>
+</test>
+<status status="FAIL" starttime="20210122 21:06:18.426" endtime="20210122 21:06:18.963"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="4">Critical Tests</stat>
+<stat pass="2" fail="4">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="4">LOGIN</stat>
+</tag>
+<suite>
+<stat pass="2" fail="4" id="s1" name="TestSuite 01">TestSuite 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
